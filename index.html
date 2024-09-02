@@ -3,22 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nepal</title>
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
-    <a href="index.html"><h1>Nepal</h1></a>
-<ol>
-    <p>
-<li><a href="phokara.html">Pokhara</a></li>
-<li><a href="kathmandu.html">Kathmandu</a></li>
-<li><a href="chitwan.html">Chitwan</a></li>
-<li><a href="shaktikhor.html">Shaktikhor</a></li>
-</p>
-</ol>
-<h2>Nepal</h2>
-<p>Nepal is the country of the Mount Everest, the highest mountain peak in the world, and the Birthplace of Gautama Buddha- Lumbini. Mountaineering and other types of adventure tourism and ecotourism are important attractions for visitors.</p>
+    <h1 style="color: rgb(158, 216, 12);">Rapha</h1>
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="itlogo.jpg" width="10%"></a> 
+           <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Nepal's Biggest Institute</h1>
+            <p>Making website is now one of the easiest thing in the world. <br>
+            You just need to learn HTMl,CSS, Javascript and Python you are good to go.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!------ Course ------>
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>HTMl,CSS, Javascript and Python, You are always welcome to our Rapha IT center.</p>
+
+         <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Learn how to meke a complete website using HTMML and CSS.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Learn how to meke a complete website using HTMML and CSS.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post graduation</h3>
+                <p>Learn how to meke a complete website using HTMML and CSS.</p>
+            </div>
+         </div>
+
+    </section>
+
+    <!-----Institute------>
+    <section class="Institute">
+        <h1>Our Rapha IT Center</h1>
+        <p>"We exist to rapha Nepal and the world."</p>
+
+        <div class="row">
+            <div class="institute-col">
+                <img src="ktmb.jpg">
+                <div class="layer">
+                    <h3>Kathmandu</h3>
+                </div>
+            </div>
+            <div class="institute-col">
+                <img src="lalita.jpg">
+                <div class="layer">
+                    <h3>Lalitpur</h3>
+                </div>
+            </div>
+            <div class="institute-col">
+                <img src="bhakta.jpg">
+                <div class="layer">
+                    <h3>Bhaktapur</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----Facilities------>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Free using laptop and free wifi and more.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="libr.jpg">
+                    <h3>World Class Library</h3>
+                    <P>Libraries are community hubs. They connect people to information and connect people to people. </P>
+                </div>
+                <div class="facilities-col">
+                    <img src="basketball.jpg">
+                    <h3>World Class Basketball</h3>
+                    <P>Libraries are community hubs. They connect people to information and connect people to people. </P>
+                </div>
+                <div class="facilities-col">
+                    <img src="cafe.jpg">
+                    <h3>World Class Cafeteria</h3>
+                    <P>Libraries are community hubs. They connect people to information and connect people to people. </P>
+                </div>
+            </div>
+    </section>
+
+    <!-----testimonials----->
+    <section class="testimonials">
+        <h1> What Our students says</h1>
+        <p>We trust Rapha IT center. We are satisfy with Rapha IT center.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="christine.jpg" width="35%">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At molestias enim placeat. </p>
+                    <h3>Christine Berkley</h3>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="david.jpg" width="35%">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At molestias enim placeat. Vitae </p>
+                    <h3>David Berkley</h3>     
+        </div>
+
+    </section>
+    <!-----Call to action----->
+    <section class="cta">
+        <h1>Enroll for our various courses <br>anywhere from the world.</h1>
+        <a href="" class="hero-btn">CONTACT US 9841750175</a>
+    </section>
+
+    <!-----Footer----->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are ready in Bhaisepati help you learn coding. Are you ready?</p>
+
+    </section>
 
 
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
 </body>
 </html>
